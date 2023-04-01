@@ -1,0 +1,28 @@
+<div>
+    <h1>{{poolData.MeetingName}}</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Vote</th>
+        </tr>
+        <tr *ngFor="let item of poolData.Vote">
+            <td>{{item.Name}}</td>
+            <td>{{item.Vote}}</td>
+        </tr>
+    </table>
+  <div>
+    <h1>New Vote:</h1>
+    Name :
+    <input type="text" placeholder="Voter name" [(ngModel)]="voterName" />
+    <br />
+    Vote Option:
+    <select id="cars" [(ngModel)]="voteOption">
+      <option value="YES">YES</option>
+      <option value="NO">NO</option>
+      <option value="ABSTENTION">ABSTENTION</option>
+    </select>
+    <br />
+    <button (click)="onClickAdd()">Add Vote</button>
+  </div>
+</div>
+<a style="cursor: pointer; color: blue;" (click)="goBack()">Back to polls overview</a>
