@@ -24,7 +24,7 @@ export class PoolOverviewComponent implements OnInit {
 		this.lastId = element.ItemId ;
 		 console.error(element.MeetingName);
 	 });
-	 console.log("data=> " , this.poolList);
+	 console.log("data=> biplob " , this.poolList);
   }
 
   onClickAdd() {
