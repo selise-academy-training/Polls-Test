@@ -2,7 +2,7 @@
 <router-outlet></router-outlet>
 <div>
     <div>
-        <h1>Existing Pools:</h1>
+        <h1>Existing Polls:</h1>
         <div *ngFor="let item of poolList">
             <a routerLink="/details/{{item.ItemId}}">{{item.MeetingName}}</a>
         </div>
